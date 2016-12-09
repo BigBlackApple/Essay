@@ -12,6 +12,8 @@
 		7BB68EC61DFA988D00E57B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB68EC41DFA988D00E57B86 /* Main.storyboard */; };
 		7BB68EC81DFA988D00E57B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BB68EC71DFA988D00E57B86 /* Assets.xcassets */; };
 		7BB68ECB1DFA988D00E57B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB68EC91DFA988D00E57B86 /* LaunchScreen.storyboard */; };
+		7BB68ED91DFA9ECE00E57B86 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB68ED81DFA9ECE00E57B86 /* NetWorkManager.swift */; };
+		7BB68EDB1DFAA3CB00E57B86 /* NetWorkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB68EDA1DFAA3CB00E57B86 /* NetWorkURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7BB68EC71DFA988D00E57B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		7BB68ECA1DFA988D00E57B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BB68ECC1DFA988D00E57B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		7BB68ED81DFA9ECE00E57B86 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		7BB68EDA1DFAA3CB00E57B86 /* NetWorkURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		7BB68EBF1DFA988D00E57B86 /* Essay */ = {
 			isa = PBXGroup;
 			children = (
+				7BB68ED71DFA9EAA00E57B86 /* NetWork */,
 				7BB68ED21DFA98C300E57B86 /* Application */,
 				7BB68ED31DFA98C300E57B86 /* Controllers */,
 				7BB68ED41DFA98C300E57B86 /* Models */,
@@ -102,6 +107,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7BB68ED71DFA9EAA00E57B86 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				7BB68ED81DFA9ECE00E57B86 /* NetWorkManager.swift */,
+				7BB68EDA1DFAA3CB00E57B86 /* NetWorkURL.swift */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB68EDB1DFAA3CB00E57B86 /* NetWorkURL.swift in Sources */,
 				7BB68EC31DFA988D00E57B86 /* ViewController.swift in Sources */,
 				7BB68EC11DFA988D00E57B86 /* AppDelegate.swift in Sources */,
+				7BB68ED91DFA9ECE00E57B86 /* NetWorkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +358,7 @@
 				7BB68ED11DFA988D00E57B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
