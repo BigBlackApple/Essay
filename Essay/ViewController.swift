@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        FSNetWorkManager().postRequest()
+        // FSNetWorkManager().postRequest()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,5 +23,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func push(_ sender: Any) {
+        
+        let v = RefreshTableViewController()
+        
+        self.show(v, sender: nil)
+    }
 }
 

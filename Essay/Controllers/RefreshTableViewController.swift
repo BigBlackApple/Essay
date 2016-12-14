@@ -13,13 +13,33 @@ class RefreshTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+      
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     }
 
+    
+    // MARK: scroll delegate
+    override func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        
+        if scrollView.contentOffset.y < -100 {
+        
+            UIView.animate(withDuration: 1.0, animations: { self.tableView.contentInset = UIEdgeInsetsMake(150.0, 0.0, 0.0, 0.0)})
+            
+        }
+    }
+    
+    override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        if scrollView.contentOffset.y + scrollView.frame.size.height >= scrollView.contentSize.height {
+        
+            UIView.animate(withDuration: 1.0, animations: { 
+                
+                self.tableView.contentInset = UIEdgeInsetsMake(0.0, 0.0, 60.0, 0.0)
+            })
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,24 +48,23 @@ class RefreshTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 10
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        
+        cell.textLabel?.text = "hehe"
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
