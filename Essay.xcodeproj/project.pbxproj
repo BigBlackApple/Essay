@@ -15,7 +15,12 @@
 		7BB68ECB1DFA988D00E57B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BB68EC91DFA988D00E57B86 /* LaunchScreen.storyboard */; };
 		7BB68ED91DFA9ECE00E57B86 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB68ED81DFA9ECE00E57B86 /* NetWorkManager.swift */; };
 		7BB68EDB1DFAA3CB00E57B86 /* NetWorkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB68EDA1DFAA3CB00E57B86 /* NetWorkURL.swift */; };
+		7BBAA1FE1E02232400E198FE /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAA1FD1E02232400E198FE /* CollectionTableViewController.swift */; };
+		7BBAA2001E02235E00E198FE /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAA1FF1E02235E00E198FE /* CollectionViewController.swift */; };
+		7BBAA2021E02238300E198FE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAA2011E02238300E198FE /* CustomCollectionViewCell.swift */; };
 		7BBE19811E0038F8005E8DDD /* FSCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBE19801E0038F8005E8DDD /* FSCircleButton.swift */; };
+		7BC8BA601E03746400A0DA5B /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BA5F1E03746400A0DA5B /* GradientLayer.swift */; };
+		7BC8BA621E0378E200A0DA5B /* ShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC8BA611E0378E200A0DA5B /* ShapeLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +34,12 @@
 		7BB68ECC1DFA988D00E57B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		7BB68ED81DFA9ECE00E57B86 /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		7BB68EDA1DFAA3CB00E57B86 /* NetWorkURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkURL.swift; sourceTree = "<group>"; };
+		7BBAA1FD1E02232400E198FE /* CollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
+		7BBAA1FF1E02235E00E198FE /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7BBAA2011E02238300E198FE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		7BBE19801E0038F8005E8DDD /* FSCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSCircleButton.swift; sourceTree = "<group>"; };
+		7BC8BA5F1E03746400A0DA5B /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
+		7BC8BA611E0378E200A0DA5B /* ShapeLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		7BB68EBF1DFA988D00E57B86 /* Essay */ = {
 			isa = PBXGroup;
 			children = (
+				7BC8BA5E1E03741B00A0DA5B /* Layers */,
 				7BB68ED71DFA9EAA00E57B86 /* NetWork */,
 				7BB68ED21DFA98C300E57B86 /* Application */,
 				7BB68ED31DFA98C300E57B86 /* Controllers */,
@@ -85,6 +96,8 @@
 			children = (
 				7BB68EC21DFA988D00E57B86 /* ViewController.swift */,
 				7B62CB551DFEE5FB00238A31 /* RefreshTableViewController.swift */,
+				7BBAA1FD1E02232400E198FE /* CollectionTableViewController.swift */,
+				7BBAA1FF1E02235E00E198FE /* CollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				7BBE19801E0038F8005E8DDD /* FSCircleButton.swift */,
+				7BBAA2011E02238300E198FE /* CustomCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +136,15 @@
 				7BB68EDA1DFAA3CB00E57B86 /* NetWorkURL.swift */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		7BC8BA5E1E03741B00A0DA5B /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				7BC8BA5F1E03746400A0DA5B /* GradientLayer.swift */,
+				7BC8BA611E0378E200A0DA5B /* ShapeLayer.swift */,
+			);
+			path = Layers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +221,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BBE19811E0038F8005E8DDD /* FSCircleButton.swift in Sources */,
+				7BC8BA601E03746400A0DA5B /* GradientLayer.swift in Sources */,
+				7BBAA2021E02238300E198FE /* CustomCollectionViewCell.swift in Sources */,
 				7B62CB561DFEE5FB00238A31 /* RefreshTableViewController.swift in Sources */,
 				7BB68EDB1DFAA3CB00E57B86 /* NetWorkURL.swift in Sources */,
+				7BBAA1FE1E02232400E198FE /* CollectionTableViewController.swift in Sources */,
+				7BBAA2001E02235E00E198FE /* CollectionViewController.swift in Sources */,
 				7BB68EC31DFA988D00E57B86 /* ViewController.swift in Sources */,
 				7BB68EC11DFA988D00E57B86 /* AppDelegate.swift in Sources */,
+				7BC8BA621E0378E200A0DA5B /* ShapeLayer.swift in Sources */,
 				7BB68ED91DFA9ECE00E57B86 /* NetWorkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
